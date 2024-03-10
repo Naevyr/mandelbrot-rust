@@ -1,5 +1,5 @@
 
-use crate::ComplexNumber::ComplexNumber;
+use crate::complex_numbers::ComplexNumber;
 
 
 pub(crate) fn PixelToComplex( x :i32,y:i32, scale : f64) -> ComplexNumber{

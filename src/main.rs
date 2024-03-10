@@ -1,26 +1,21 @@
 extern crate sdl2;
 
 
-
-
-
-
 use sdl2::gfx::primitives::DrawRenderer;
-use sdl2::libc::clock_t;
-use sdl2::mouse::{MouseButton, MouseState, MouseWheelDirection};
-use sdl2::pixels::PixelFormatEnum;
-use sdl2::render::Canvas;
-use sdl2::surface::{Surface, self};
-use sdl2::{pixels::Color, render::Texture};
+
+use sdl2::mouse::MouseButton;
+
+
+use sdl2::pixels::Color;
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode;
-use sdl2::rect::{Point, Rect};
 
-mod Util;
-use Util::{PixelToComplex};
-mod ComplexNumber;
-use crate::ComplexNumber::ComplexNumber as Complex;
-use std::time::Instant;
+
+mod util;
+use util::PixelToComplex;
+mod complex_numbers;
+use crate::complex_numbers::ComplexNumber as Complex;
+
 
 
 
